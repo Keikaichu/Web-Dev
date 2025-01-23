@@ -1,0 +1,128 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.mainrectangle {
+    width: 100%;
+    background-color: #706dc4;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mainrectangle h1 {
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.menu_rect {
+    background-color: #4e4c89;
+    width: 30%; /* Меню занимает 30% ширины */
+    height: 100vh; /* Высота меню на весь экран */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.menu_rect h2 {
+    margin-top: 0;
+}
+
+.menu_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.menu_list li {
+    margin-bottom: 10px;
+}
+
+.menu_item {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.content {
+    display: grid; /* Сетка для карточек */
+    grid-template-columns: 1fr 1fr; /* Две колонки одинаковой ширины */
+    grid-template-rows: auto auto; /* Две строки */
+    gap: 20px; /* Расстояние между карточками */
+    width: 100%; /* Контейнер занимает всю ширину */
+    margin: 40px auto; /* Центрируем контейнер */
+    padding: 20px; /* Внутренние отступы */
+    box-sizing: border-box; /* Учет отступов */
+    background-image: url('background.jpg'); /* Путь к фоновому изображению */
+    background-size: cover; /* Изображение заполняет весь фон */
+    background-position: center; /* Центрируем фон */
+    background-repeat: no-repeat; /* Отключаем повторение изображения */
+    color: white; /* Текст белого цвета для читаемости */
+}
+
+
+.course {
+    width: 100%; /* Карточка занимает всю ширину */
+    height: 200px; /* Высота карточки */
+    border: 2px solid #4e4c89; /* Граница карточки */
+    display: flex; /* Flexbox для центровки */
+    flex-direction: column; /* Изображение сверху, текст снизу */
+    justify-content: center; /* Центрируем содержимое */
+    align-items: center;
+    text-align: center; /* Центрируем текст */
+    font-size: 18px; /* Размер шрифта */
+    color: #4e4c89; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    background-color: white; /* Белый фон */
+    border-radius: 8px; /* Скругленные углы */
+    overflow: hidden; /* Скрываем лишние части изображения */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Добавляем тень */
+}
+
+.course img {
+    width: 100%; /* Изображение занимает всю ширину карточки */
+    height: 120px; /* Высота изображения */
+    object-fit: cover; /* Сохраняем пропорции изображения */
+}
+
+.course span {
+    margin-top: 5px; /* Отступ между изображением и текстом */
+    font-weight: bold; /* Жирный текст */
+}
+.course:hover {
+    color: #4e4c89; /* Изменяем цвет текста */
+    background-color: rgba(255, 255, 255, 0.8); /* Светлый фон при наведении */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Увеличиваем тень */
+    transform: scale(1.05); /* Легкое увеличение карточки */
+    transition: all 0.3s ease; /* Плавный переход для всех изменений */
+}
+
+
+
+
+
+
+
+.footer {
+    width: 100%;
+    background-color: #706dc4;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+.footer a {
+    margin: 0 10px; /* Отступы слева и справа */
+    color: white;
+    text-decoration: none;
+}
